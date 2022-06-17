@@ -59,7 +59,7 @@ def index():
             now_date = dat.now()
             img_name = "gray"+now_date.strftime("%Y-%m-%d-%H-%M-%S")+".png"
             cv2.imwrite(os.path.join(IMG_PATH+img_name), img)
-            text1 = "ありがとう"
+            text1 = "おめでとう"
             text2 = "これであなたも笑い男だ"
     return render_template("index.html", img_name=img_name, text1=text1, text2=text2)
 
